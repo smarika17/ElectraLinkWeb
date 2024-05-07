@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectraLink</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@500&family=Montserrat:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">
+                <i class="ri-flashlight-line electricpe"></i> <p>Electra</p><p class="pe">Link</p>
+            </a>
+
+            <div class="nav_menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active_link">
+                            <i class="ri-home-line"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link">
+                            <i class="ri-information-line"></i>
+                            <span>About Us</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#product" class="nav_link">
+                            <i class="ri-product-hunt-line"></i>
+                            <span>Products</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#testimonial" class="nav_link">
+                            <i class="ri-message-3-line"></i>
+                            <span>Testimonial</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#testimonial" class="nav_link">
+                            <i class="ri-phone-line"></i>
+                            <span>Contact Us</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav_action">
+                <i class="ri-moon-line change_theme" id="theme_button"></i>
+            </div>
+        </nav>
+
+        <div class="home_data" id="home">
+            <h1 class="title">Electrifying the Nation</h1>
+            <p class="content">Get an EV, Charging is sorted!</p>
+        </div>
+
+        <div class="buttons">
+            <a href="app-release.apk"><button type="button" href="" class="button">Download App</button></a>
+
+            <button type="button" href="#" class="button" onclick="document.getElementById('about').scrollIntoView()">Explore</button>
+        </div>
+    </header>
+    
+    <main class="main">
+        <section class="about section" id="about">
+            <div class="about_container container grid">
+                <div class="about_data">
+                    <h1 class="about_title">
+                        About Us 👨‍💼
+                    </h1>
+
+                    <img src="Images/earth-removebg-preview.png" alt="image" class="about_img">
+
+                    <p>Imagine while on your journey with your electric vehicle, you receive a notification indicating a low battery. Fortunately, our dedicated app swiftly provides a solution. By accessing the app and navigating to the map feature, it seamlessly displays all the nearest charging stations, meticulously installed by our team. <br>
+                        You will promptly directed myself to the nearest charging station, allowing for a swift and efficient recharge of your vehicle. The streamlined process extends to the seamless payment of the charging cost through the app, ensuring a hassle-free experience for users like yourself.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="info section">
+            <div class="info_container">
+                <img src="Images/banner.jpg" alt="image" class="info_img">
+
+                <div class="info_data container grid">
+                    <h1 class="info_title">ElectraLink Charging Infrastructure</h1>
+
+                    <p>With our platform, we aim to create a seamless and convenient experience for all those who want to switch to electric vehicles, and contribute towards a greener tomorrow. Fleet owners, housing societies, shops, offices, and co-working spaces can now easily manage their charging infrastructure and monitor usage through our user-friendly platform, further promoting sustainability.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="dummy_data">
+            <div class="container counter_container">
+                <div>
+                    <h2 class="counter_numbers">6000</h2>
+                    <p>Chargers</p> 
+                </div>
+
+                <div>
+                    <h2 class="counter_numbers">8500</h2>
+                    <p>Customers</p>
+                </div>
+
+                <div>
+                    <h2 class="counter_numbers">10000</h2>
+                    <p>Bookings</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner section" id="banner">
+            <div class="banner_container container grid">
+                <div class="banner_data">
+                    <img src="Images/banner.jpeg" alt="images" class="banner_img">
+
+                    <h1 class="banner_title">EV Charging, Simplified <img src="Images/light-bulb.gif" alt="" class="lightbulb"></h1>
+                    
+                    <div class="icons">
+                        <img src="Images/qr-code.gif" alt="image" class="banner_icons">
+                        <h3 class="subtitle">SCAN</h3>
+                        <p class="banner_info">Find the nearest charging station and Scan the QR code</p>
+                    </div>
+
+                    <div class="icons">
+                        <img src="Images/eco-fuel.gif" alt="image" class="banner_icons">
+                        <h3 class="subtitle">CHARGE</h3>
+                        <p class="banner_info">Start charging your vehicle & Get live updates on the app</p>
+                    </div>
+
+                    <div class="icons">
+                        <img src="Images/payment-app.gif" alt="image" class="banner_icons">
+                        <h3 class="subtitle">PAY</h3>
+                        <p class="banner_info">Pay only for what you consume</p>
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <section class="product section" id="product">
+            <div class="product_container container grid">
+                <div class="product_data">
+                    <h1 class="pr_title">Find your first <br> EV charging station <img src="Images/pin.gif" alt="" class="pin"></h1>
+                </div>
+                <div class="location">
+                    <button type="button" onclick="window.location.href='https://www.google.com/maps/search/all+electric+ev+stations/@22.8280553,75.8117336,8.86z?entry=ttu'" class="location_button">View All Stations</button>
+                </div>                
+            </div>
+        </section>
+
+        <section class="card-section">
+            <div class="card" style="background-image: url('Images/Delhi.jpeg');">
+                <a href="https://www.google.com/maps/search/delhi+sll+ev+changing+section/@28.5928863,77.0267564,11z/data=!3m1!4b1?hl=en&entry=ttu" > Delhi
+                    <!-- <p>This is the content of card 1.</p> -->
+                </a>
+            </div>
+            <div class="card" style="background-image: url('Images/Banglore.jpeg');">
+                
+                <a href="https://www.google.com/maps?sca_esv=123152d4660d04db&rlz=1C5CHFA_enIN1015IN1015&output=search&q=bangalore+ev+charging+station+map&source=lnms&entry=mc"> Bangalore
+                </a>
+            </div>
+            <div class="card" style="background-image: url('Images/Hyderabad.jpeg');">
+                <a href="https://www.google.com/maps/search/hyderabad+ev+charging+station+map/@17.4168892,78.4362314,13z/data=!3m1!4b1?entry=ttu" > Hyderabad
+                    <!-- <p>This is the content of card 1.</p> -->
+                </a>
+            </div>
+        </section>
+
+        <section class="product section" id="book">
+            <h1 class="product_title">Book a Free Home Test Ride</h1>
+            <p class="product_p">Choose a free test ride for your preferred EV, either at our multi-brand experience <br> centre or at home. Explore 25+ models and start your EV journey today.</p>
+
+            <button class="product_btn">Explore EVs</button>
+            <img src="Images/test-ride-banner.png" class="testride_banner" alt="">
+
+            <div class="product_model">
+                <div class="product_model-content">
+                    <i class="ri-close-line product_model-close"></i>
+                    <h3 class="product_model-title">Book your ride now!</h3>
+
+                    <form class="book_form">
+                        <label for="email">Enter your email</label> <br>
+                        <input type="email" id="email" placeholder="please enter a valid e-mail"> 
+
+                        <br>
+
+                        <label for="phone">Enter your phone number</label> <br>
+                        <input type="tel" id="phone" placeholder="please enter a valid phone number">
+
+                        <br>
+
+                        <label for="booking">date and time of test ride</label>
+                        <input type="datetime-local" id="booking">
+
+                        <br>
+                        <textarea id="address" cols="50" rows="4">Enter your Address...</textarea>
+                    </form>
+
+                    <button class="form_submit" type="submit">Book</button>
+                </div>
+            </div>
+
+            <div class="top_brands">
+                <h1>All Top Brands Available</h1>
+                <video class="video" autoplay loop muted>
+                    <source src="Images/ev-brand-loop.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </section>
+
+        <section class="buy_product section" id="shop">
+            <div class="buy_product-section container grid">
+                <h1 class="buy_product-title">Shop By Category</h1>
+            </div>
+
+            <div class="product_cards">
+                <div class="p_card">
+                    <img src="Images/scooter.jpeg" alt="image" class="category_img"> <br>
+                    <button class="category">Vehicles</button>
+                </div>
+
+                <div class="p_card">
+                    <img src="Images/charger.jpg" alt="image" class="category_img"> <br>
+                    <button class="category">Chargers</button>
+                </div>
+
+                <div class="p_card">
+                    <img src="Images/helmet.png" alt="image" class="category_img"> <br>
+                    <button class="category">Accessories</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials section" id="review">
+            <div class="test_section container grid">
+                <h1 class="testimonials_title">What our customers say about us!</h1>
+            </div>
+
+            <div class="testimonials_content">
+                <div class="swiper testimonials_slider js_testimonials_slider">
+                    <div class="swiper-wrapper">
+                        <div class="testimonials_item swiper-slide">
+                            <div class="t_info">
+                                <img src="Images/userprofile.png" alt="img">
+                                <div class="text-box">
+                                    <h3 class="t_name">John Doe</h3>
+                                </div>
+                            </div>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui inventore blanditiis cum est vitae officia fugit, corporis nobis fuga tempora.</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="testimonials_item swiper-slide">
+                            <div class="t_info">
+                                <img src="Images/userprofile.png" alt="img">
+                                <div class="text-box">
+                                    <h3 class="t_name">John Doe</h3>
+                                </div>
+                            </div>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui inventore blanditiis cum est vitae officia fugit, corporis nobis fuga tempora.</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="testimonials_item swiper-slide">
+                            <div class="t_info">
+                                <img src="Images/userprofile.png" alt="img">
+                                <div class="text-box">
+                                    <h3 class="t_name">John Doe</h3>
+                                </div>
+                            </div>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui inventore blanditiis cum est vitae officia fugit, corporis nobis fuga tempora.</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="testimonials_item swiper-slide">
+                            <div class="t_info">
+                                <img src="Images/userprofile.png" alt="img">
+                                <div class="text-box">
+                                    <h3 class="t_name">John Doe</h3>
+                                </div>
+                            </div>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui inventore blanditiis cum est vitae officia fugit, corporis nobis fuga tempora.</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="testimonials_item swiper-slide">
+                            <div class="t_info">
+                                <img src="Images/userprofile.png" alt="img">
+                                <div class="text-box">
+                                    <h3 class="t_name">John Doe</h3>
+                                </div>
+                            </div>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui inventore blanditiis cum est vitae officia fugit, corporis nobis fuga tempora.</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination js_testimonials_pagination"></div>
+            </div>
+        </section>
+        
+        
+    </main>
+
+    <script>
+        $(document).ready(function() {
+            $(".counter_numbers").counterUp({
+                delay: 10,
+                time: 3000
+            });
+        });
+    </script>
+    <footer class="footer">
+        <div class="footer_info">
+            <div class="footer_section">
+                <h2>About</h2>
+                <p>
+                    Imagine while on your journey with your electric vehicle, 
+                    you receive a notification indicating a low battery.
+                    Fortunately, our dedicated app swiftly provides a solution. 
+                </p>
+                <h3>Contact team Address</h3>
+                <p>Team Epics, VIT Bhopal University</p>
+                <div class="social-media">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_section">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#product">View All Station</a></li>
+                    <li><a href="#book">Shop</a></li>
+                    <li><a href="#review">Review</a></li>
+                </ul>
+            </div>
+            <div class="footer_section">
+                <h2>Products</h2>
+                <ul>
+                    <li><a href="#book">Buy EV</a></li>
+                    <li><a href="#shop">Chargers</a></li>
+                    <li><a href="#">ElectraLink App</a></li>
+                    <li><a href="#about">ElectraLink Details</a></li>
+                </ul>
+            </div>
+            <div class="footer_section">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li>
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <a href="https://www.google.com/maps/d/viewer?mid=1Y-ynI3HdfkwN17v6o_Q8OAEbCWU&hl=en_US&ll=12.972548000000007%2C79.160496&z=17">Address</a>
+                    </li>
+                    <li>
+                        <span><i class="far fa-envelope"></i></span>
+                        <a href="#">eleralink@gmail.com</a>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone-volume"></i></span>
+                        <a href="#">8817150897</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>@COPYRIGHT 2024 ElectraLink</p>
+        </div>
+    </footer>
+    
+    
+    
+    
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
